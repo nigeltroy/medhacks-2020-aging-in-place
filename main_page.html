@@ -8,8 +8,36 @@
 <style>
 body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
 body {font-size:16px;}
-.w3-half img{float:left;width: 33.33%;padding:5 px;opacity:0.8;cursor:pointer}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
 .w3-half img:hover{opacity:1}
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.img__description {
+  position: absolute;
+  text-align: center;
+  background: rgba(177, 57, 57, 0.72);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+
+  /* transition effect. not necessary */
+  transition: opacity .2s, visibility .2s;
+}
+
+.column:hover .img__description {
+  visibility: visible;
+  opacity: 1;
+}
+
 </style>
 <body>
 
@@ -32,22 +60,20 @@ body {font-size:16px;}
   </div>
   
   <!-- Photo grid (modal) -->
-  <div class="w3-row-padding">
-    <div class="w3-half">
-      <img src="https://res.cloudinary.com/devex/image/fetch/c_scale,f_auto,q_auto,w_720/https://lh6.googleusercontent.com/pqzA565QxaPcdtTDqyTJz0i_ddN2_kqHoEyC1DW9e7xMWLufyZhl4EyEsvAYl_oDzWslTyTDMD0J9k4oGGaswxfMIl8h8AD1M1IO-BY051iE45JqD4gTFP_52-PdxQ-vaMmOXIcL" style="width:100%" onclick="location.href='meds.html';" alt="Medicine">
+  <div class="row">
+    <div class="column">
+      <img src="meds.jpeg" style="width:100%" onclick="location.href='meds.html';" alt="Medicine">
+      <p class="img__description">Medicine for you.</p>
     </div>
-    <div class="w3-half">      
-      <img src="https://image.shutterstock.com/image-vector/drugs-motorbike-delivery-vector-icon-260nw-322689728.jpg" style="width:100%" onclick="location.href='deliver.html';" alt="Concrete meets bricks">
+    <div class="column">      
+      <img src="delivery.png" style="width:100%" onclick="location.href='deliver.html';" alt="Concrete meets bricks">
+      <p class="img__description">Get Medication at Your Doorstep.</p>
     </div>
-    <div class="w3-half">
-      <img src="https://ramoslawfirm.com/wp-content/uploads/2020/05/docs-e1589476851984.jpg" style="width:100%" onclick="location.href='appointment.html';" alt="Light, white and tight scandinavian design">
+    <div class="column">
+      <img src="appointment.jpg" style="width:100%" onclick="location.href='appointment.html';" alt="Light, white and tight scandinavian design">
+      <p class="img__description">Fix an Appointment.</p>
     </div>
 
-    <div class="w3-half">
-      <img src="/w3images/atrium.jpg" style="width:100%" onclick="onClick(this)" alt="Windows for the atrium">
-      <img src="/w3images/bedroom.jpg" style="width:100%" onclick="onClick(this)" alt="Bedroom and office in one space">
-      <img src="/w3images/livingroom2.jpg" style="width:100%" onclick="onClick(this)" alt="Scandinavian design">
-    </div>
   </div>
 
   <!-- Modal for full size images on click-->
