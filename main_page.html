@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <title>W3.CSS Template</title>
+<head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
 <!-- Including the bootstrap css via CDN -->
-<link 
-rel="stylesheet" 
-href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
-integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
-crossorigin="anonymous"
->
+ <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+ <!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ 
+ <!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
 <style>
 body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
 body {font-size:16px;}
@@ -49,20 +52,21 @@ body {font-size:16px;}
 <body>
 
 <!-- Top menu on small screens -->
-<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
-  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+<header class="w3-container w3-top w3-red w3-xlarge w3-padding w3-center">
+  <a href="javascript:void(0)" class="w3-red w3-margin-center" onclick="location.href='volunteer.html';" title="Volunteer/Donate">♡</a>
   <span>Oreo Health Services</span>
 </header>
-
+<br>
+<br>
 <!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:340px;margin-right:40px">
+<div class="w3-main" style="margin-left:500px;margin-right:500px">
 
   <!-- Header -->
-  <div class="w3-container" style="margin-top:80px" id="showcase">
-    <h1 class="w3-jumbo"><b>Welcome!</b></h1>
-    <h1 class="w3-xxxlarge w3-text-red"><b>About Us.</b></h1>
+  <div class="container-fluid" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>Welcome to Oreo Health Services!</b></h1>
+    <h1 class="w3-xxlarge w3-text-red"><b>About Us</b></h1>
     <hr style="width:50px;border:5px solid red" class="w3-round">
-    <p>We provide health services for you.</p>
+    <p class="w3-large">We provide health services for you.</p>
   </div>
   
   <!-- Photo grid (modal) -->
@@ -94,7 +98,15 @@ body {font-size:16px;}
 
   
   <!-- Have Any Questions?-->
-  <div class="w3-container" id="contact" style="margin-top:75px">
+  <div class="container-fluid" id="contact" style="margin-top:75px" text>
+    <h1 class="w3-xxlarge w3-text-red"><b>Customer Reviews</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <blockquote class="blockquote-reverse">
+      <p>I'm just tryna look cool here why do y'all hate me</p>
+      <footer>Rich Brian</footer>
+    </blockquote>
+  </div>
+  <div class="container-fluid" id="contact" style="margin-top:75px" text>
     <h1 class="w3-xlarge w3-text-red"><b>Have Any Questions? We'll be Happy to Hear.</b></h1>
     <hr style="width:50px;border:5px solid red" class="w3-round">
     <p>We value your feedback.</p>
@@ -119,7 +131,8 @@ body {font-size:16px;}
 </div>
 
 <!-- W3.CSS Container -->
-<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">Love</a></p></div>
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by the code <a href="https://github.com/nigeltroy/medhacks-2020-aging-in-place" target="_blank" class="w3-hover-opacity">here</a></p></div>
 
 </body>
+</head>
 </html>
